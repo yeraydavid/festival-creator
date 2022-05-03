@@ -1,0 +1,74 @@
+<html lang="es" xmlns="http://www.w3.org/1999/html">
+<head>
+	<!--script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script-->
+	<script src="jquery-3.6.0.slim.min.js" ></script>
+	<script src="concierto.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<title>Festival poster creator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Festival poster creator" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.yeray.com/festival" />
+	<meta property="og:image" content="https://www.yeray.com/festival/festival.png" />
+	<meta property="og:description" content="Create and share your dreamed festival line-up!" />
+</head>
+<body>
+
+<div class="wrapper">
+
+	<div class="title">
+	<h1>Festival poster creator</h1>
+	<span class="credit">Another webtoy by <a href="http://www.yeray.com">Yeray David</a>.</span>
+	</div>
+
+	<div class="creator">
+
+		<div class="form">
+
+			<div class="component-group">
+			<div class="component">
+				<label for="template">Template</label><select id="template">
+					<option value="8">Generic</option>
+					<option value="0">Classic Rock</option>
+					<option value="7">Pop Rock</option>
+					<option value="5">Dance-Electronica</option>
+					<option value="4">Post Rock</option>
+					<option value="3">Classic Metal</option>
+					<option value="1">Epic Power Metal</option>
+					<option value="6">Classical</option>
+					<option value="2">Jazz</option>
+				</select>
+			</div>
+
+			<div class="component">
+				<label for="festName">Festival name</label><input type="text" id="festName"/></div>
+			</div>
+
+			<div class="component">
+				<label for="head">Headliners</label><input type="text" id="head" />
+			</div>
+
+
+			<div class="component front">
+				<label for="front">Main bands</label><textarea id="front" rows="1"> </textarea>
+			</div>
+
+			<div class="component supporting">
+				<label for="support">Supporting bands</label><textarea id="support" rows="3"> </textarea>
+			</div>
+
+		</div>
+
+		<div class="canvas-wrapper">
+			<canvas id="canvas" width="1280" height="1810"></canvas>
+			<a href="#" id="download">Download it</a>
+		</div>
+
+	</div>
+
+</div>
+
+</body>
+
+
+</html>

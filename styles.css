@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&family=Metal+Mania&family=Lobster&family=Jost&family=Zen+Dots&family=Crimson+Text&family=Metal+Mania&family=Chicle&family=Cinzel:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background: #F0F0F0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400
+}
+
+.wrapper {
+    padding: 16px;
+    margin: 0 auto;
+    background: white;
+    max-width: 1440px;
+    width: 100%;
+    position: relative;
+    min-height: 100%;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font-family: 'cinzel', serif;
+    font-size: 2.5em;
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.creator {
+    display: flex;
+    align-items: flex-start;
+}
+
+.credit a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.canvas-wrapper {
+    text-align: center;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.canvas-wrapper span {
+    font-size: 0.8em;
+    display: block;
+}
+
+.credit {
+    font-size: 0.8em;
+}
+
+canvas {
+    margin: auto;
+    zoom: 0.5;
+    border: 1px solid black;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.component {
+    display: inline-block;
+    margin-top: 8px;
+    vertical-align: top;
+}
+
+#download {
+    background: #505050;
+    padding: 8px 16px;
+    margin: 16px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 2px solid #909090;
+}
+
+.form div label, .form div textarea, .form div select {
+    display: block;
+}
+
+textarea, select, input {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.component-group {
+    display: flex;
+}
+
+.component-group .component:first-child {
+    margin-right: 15px;
+}
+
+option {
+    height: 20px;
+}
+
+@media only screen and (max-width: 1439px) {
+    canvas {
+        zoom: 0.35;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+
+    .canvas-wrapper, .form {
+        width: 100%;
+    }
+
+    .creator {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    canvas {
+        zoom: 0.25;
+    }
+}
